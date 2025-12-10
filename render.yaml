@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: zendela-webhook
+    env: python
+    startCommand: gunicorn main:app --bind 0.0.0.0:$PORT
+    plan: free
